@@ -8,6 +8,8 @@ Instruction -
 Run the project using Codeblocks, then:
 
 Press B to SELECT Black brush
+
+
 Press r to SELECT Red brush
 Press g to SELECT Green brush
 Press b to SELECT Blue brush
