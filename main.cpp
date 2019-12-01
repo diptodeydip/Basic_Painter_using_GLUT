@@ -25,32 +25,44 @@ void draw_pixel(int x, int y) {
 
 void keyboard(unsigned char key, int X, int Y)
 {
-    if(key==98){
-            glPointSize(bsize);
-        glColor3f(0.0f, 0.0f, 0.0f);
-    }
-    if(key==103){
-            glPointSize(bsize);
-        glColor3f(0.0f, 1.0f, 0.0f);
-    }
+    //Ascii of 'r'
     if(key==114){
             glPointSize(bsize);
         glColor3f(1.0f, 0.0f, 0.0f);
     }
+    //Ascii of 'g'
+    if(key==103){
+            glPointSize(bsize);
+        glColor3f(0.0f, 1.0f, 0.0f);
+    }
+    //Ascii of 'b'
+    if(key==98){
+            glPointSize(bsize);
+        glColor3f(0.0f, 0.0f, 1.0f);
+    }
+    //Ascii of 'B'
+    if(key==66){
+
+        glPointSize(bsize);
+        glColor3f(0.0f, 0.0f, 0.0f);
+    }
+
+    //Ascii of 'e'
     if(key==101){
             glPointSize(20.0);
         glColor3f(1.0f, 1.0f, 1.0f);
     }
-
+    //Ascii of '+'
     if(key==43){
          bsize++;
          glPointSize(bsize);
     }
+    //Ascii of '-'
     if(key==45){
          bsize--;
          glPointSize(bsize);
     }
-
+    //Ascii of 'c'
     if(key==99){
         glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
     }
@@ -80,9 +92,10 @@ void myDisplay(void)
 
 int main (int argc, char** argv)
 {
-    printf("Press b to SELECT Black brush\n");
+    printf("Press B to SELECT Black brush\n");
     printf("Press r to SELECT Red brush\n");
     printf("Press g to SELECT Green brush\n");
+    printf("Press b to SELECT Blue brush\n");
     printf("Press c for 2 sec to CLEAR window\n");
     printf("Press + to INCREASE brush size\n");
     printf("Press - to DECREASE brush size\n");
