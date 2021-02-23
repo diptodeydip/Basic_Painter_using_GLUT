@@ -7,7 +7,8 @@ double bsize=4;
 void myInit (void)
 {
     // Reset background color with white (since all three argument is 1.0)
-    glClearColor(1.0, 1.0, 1.0, 0.0);
+    glClearColor(1.0, 1.0, 1.0, 1.0);
+    glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
     glColor3f(0.0f, 0.0f, 0.0f);
     glPointSize(bsize);
     glMatrixMode(GL_PROJECTION);
@@ -96,7 +97,8 @@ int main (int argc, char** argv)
     printf("Press r to SELECT Red brush\n");
     printf("Press g to SELECT Green brush\n");
     printf("Press b to SELECT Blue brush\n");
-    printf("Press c for 2 sec to CLEAR window\n");
+    //printf("Press c for 2 sec to CLEAR window\n");
+    printf("Press c to CLEAR window\n");
     printf("Press + to INCREASE brush size\n");
     printf("Press - to DECREASE brush size\n");
     printf("Press e to SELECT     Eraser brush\n");
@@ -104,7 +106,8 @@ int main (int argc, char** argv)
     printf("CLICK MOUSE RIGHT BUTTON TO Disable brush\n");
 
     glutInit(&argc, argv);
-    glutInitDisplayMode(GLUT_DOUBLE | GLUT_RGBA);
+    //glutInitDisplayMode(GLUT_DOUBLE | GLUT_RGBA); creates some problem
+    glutInitDisplayMode(GLUT_RGBA);
     glutInitWindowSize(1200, 640);
     glutInitWindowPosition(600, 0);
     glutCreateWindow("Basic Painter");
