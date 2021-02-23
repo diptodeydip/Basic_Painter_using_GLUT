@@ -1,10 +1,8 @@
 # Basic_Painter_using_GLUT
-
-Graphics Lab Project
-
 Paint using 4 color brush
 
-Instruction -
+It was developed as a course work for Graphics lab course (3/2)
+## Instruction
 
 Run the project using Codeblocks, then:
 
@@ -16,7 +14,7 @@ Press g to SELECT Green brush
 
 Press b to SELECT Blue brush
 
-Press c for 2 sec to CLEAR window;
+Press c to CLEAR window
 
 Press + to INCREASE brush size
 
@@ -27,3 +25,11 @@ Press e to SELECT     Eraser brush
 Click MOUSE LEFT BUTTON to Enable brush
 
 CLICK MOUSE RIGHT BUTTON TO Disable brush
+
+## Specs
+GLUT (GL Utilities Toolkit) library is used to use OpenGl
+
+
+**Some SS from this project:**
+
+<img src="photos/1.png" title="Click to enlarge picture"/>
